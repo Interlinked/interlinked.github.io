@@ -8,9 +8,17 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div class="title">
+      <h1>Oatify Me!</h1>
+    </div>
+   
     <div class="mainDiv">
-    <input type="text" id="oatInput" name="oatInput"> 
+    <textarea type="text" id="oatInput" name="oatInput"></textarea>
     <button id="oatButton" class="button" onclick="oatify()">oatify me</button>
+    </div>
+    <div class="result">
+    <textarea type="text" id="oatOutput" name="oatOutput"></textarea>
+    <input id="copyButton" class="button" onclick="copyOut()" value="copy to clipboard" type="button"></input>
     </div>
     
     <script src="index.js"></script>

@@ -4,3 +4,15 @@
   top: 50%;
   left: 40%;
 }
+.result{
+  margin: auto;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+;}
+body {
+  background-image: url('https://i.ibb.co/M5F4mBp/oats.webp');
+}
+.title {
+  text-align: center;
+}
