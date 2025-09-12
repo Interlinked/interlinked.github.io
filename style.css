@@ -1,3 +1,7 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
 .mainDiv{
   margin: auto;
   position: absolute;
