@@ -1,49 +1,50 @@
 .content {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
 }
-.mainDiv{
-  margin: auto;
-  position: absolute;
+
+.headerContent {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   
-  font-family: Arial, Helvetica, sans-serif;
-}
-.result{
-  margin: auto;
-  position: absolute;
-  top: 60%;
-  left: 40%;
-  font-family: Arial, Helvetica, sans-serif;
 }
 body {
   background-image: url('https://i.ibb.co/M5F4mBp/oats.webp');
 }
-.title {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 50px;
-}
-.mid {
-  text-align: center;
+
+.button {
+  
   position: relative;
-  bottom: -300px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, rgb(129, 129, 148), blue);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  border-width: 0px;
+  transition: color 1s;
+  z-index: 0;
 }
-.explain {
-  text-align: center;
-  position: relative;
-  bottom: 200px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
+
+.button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, red, yellow);
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: -1;
 }
-.credit {
-  text-align: center;
+
+.button:hover::after {
+  opacity: 1;
+}
+
+.button span {
   position: relative;
-  bottom: -150px;
-  width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 7.5px;
-  background-color: grey;
+  z-index: 1;
 }
